@@ -2,6 +2,7 @@
   "name": "coachme",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -9,6 +10,7 @@
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
     "bootstrap-material-design": "^4.1.2",
+    "mdbreact": "^4.24.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
