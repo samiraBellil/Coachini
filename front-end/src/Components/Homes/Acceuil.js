@@ -1,16 +1,15 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Main from './Main'
-import Test from './sectiontest'
-import './ComponentStyle.css';
+import NavbarR from '../NavbarR'
+import Main from '../Main'
+import Test from '../sectiontest'
+import '../ComponentStyle.css';
 
-class Acceuil extends React.Component {
+class Accueil extends React.Component {
     render() {
         return (<main>
-
             <div className="backgroundImg">
 
-                <Navbar />
+                <NavbarR />
                 {/* <video src='https://www.youtube.com/watch?v=Bdo_I-4GF5M' type='video/mp4'></video> */}
                 <div className="sf-bnr-text text-center">
                     <div className="conteneur">
@@ -41,4 +40,4 @@ class Acceuil extends React.Component {
     }
 }
 
-export default Acceuil
+export default Accueil

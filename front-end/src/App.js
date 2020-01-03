@@ -1,10 +1,8 @@
 import React from 'react';
-import Acceuil from './Component/Acceuil'
-import Footer from './Component/Footer'
+import Accueil from './Components/Homes/Acceuil'
+// import Footer from './Components/Footer'
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbars/Navbar';
-import Accueil from './Components/Homes/Accueil';
 import CoachsList from './Components/Coach/CoachsList';
 import Activités from './Components/Activits/Activités';
 import Blog from './Components/Blogs/Blog';
@@ -22,21 +20,19 @@ import Description from './Components/Coach/Description';
 function App() {
   return (
     <BrowserRouter>
-        <Navbar />
-        {/* <Footer/> */}
+        {/* <Acceuil/> */}
 
-
-        <div className="container">
+        {/* <div className="container"> */}
         <Switch>
-        <Route exact path="/" component={Accueil} />
-        <Route exact path="/Coachs" component={CoachsList} />
-        <Route path="/Description/:id" component={Description} />
-        <Route exact path="/Activités" component={Activités} />
-        <Route exact path="/Blog" component={Blog} />
-        <Route exact path="/Boutique" component={Boutique} />
+          <Route exact path="/" component={Accueil} />
+          <Route exact path="/Coachs" component={CoachsList} />
+          <Route path="/Description/:id" component={Description} />
+          <Route exact path="/Activités" component={Activités} />
+          <Route exact path="/Blog" component={Blog} />
+          <Route exact path="/Boutique" component={Boutique} />
         {/*<Route exact path="/Connexion" component={Connexion} />*/}
         </Switch>
-        </div>
+        {/* </div> */}
       
     </BrowserRouter>
 

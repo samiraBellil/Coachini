@@ -1,11 +1,12 @@
 import React from 'react'
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView } from 'mdbreact'
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './ComponentStyle.css';
 // import ModalInscrire from '../modal/modalUser/ModalInscrire'
 // import MoodalIdentifier from '../modal/modalUser/MoodalIdentifier'
 
-class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
+class FullPageIntroWithNonFixedTransparentNavbarR extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,9 +24,7 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
     render() {
         return (
             <header>
-
-                <Router>
-                    <MDBNavbar dark expand="md">
+                    <MDBNavbar className="nav" dark expand="md">
                         <MDBContainer>
 
                             <div>
@@ -39,18 +38,18 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
                                 <MDBCollapse isOpen={this.state.collapse} navbar>
                                     <MDBNavbarNav left>
                                         <MDBNavItem >
-                                            <MDBNavLink to="#"><strong>Coachs sportifs</strong></MDBNavLink>
+                                            <MDBNavLink to="/Coachs"><strong>Coachs sportifs</strong></MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
-                                            <MDBNavLink to="#"><strong>Spécialités</strong></MDBNavLink>
+                                            <MDBNavLink to="/Activités"><strong>Spécialités</strong></MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
                                             <MDBNavLink to="#"><strong>Objectifs</strong></MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
-                                            <MDBNavLink to="#"><strong>La boutique</strong></MDBNavLink>
+                                            <MDBNavLink to="/Boutique"><strong>La boutique</strong></MDBNavLink>
                                         </MDBNavItem> <MDBNavItem>
-                                            <MDBNavLink to="#"><strong>Blog</strong></MDBNavLink>
+                                            <MDBNavLink to="/Blog"><strong>Blog</strong></MDBNavLink>
                                         </MDBNavItem>
                                         <MDBNavItem>
                                             <MDBNavLink to="#"><strong>Connexion</strong></MDBNavLink>
@@ -62,7 +61,6 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
 
                         </MDBContainer>
                     </MDBNavbar>
-                </Router>
 
             </header>
 
@@ -70,7 +68,7 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
     }
 }
 
-export default FullPageIntroWithNonFixedTransparentNavbar;
+export default FullPageIntroWithNonFixedTransparentNavbarR;
 
 
 
