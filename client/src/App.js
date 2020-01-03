@@ -1,4 +1,6 @@
 import React from 'react';
+import Acceuil from './Component/Acceuil'
+import Footer from './Component/Footer'
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbars/Navbar';
